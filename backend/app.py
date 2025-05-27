@@ -1,9 +1,11 @@
 from flask import Flask, render_template, jsonify
+import os
 
 app = Flask(__name__, template_folder='.', static_folder='.')
 
 @app.route('/')
 def index():
+    print("Current working directory:", os.getcwd())
     return render_template('../frontend/index.html'), 200
 
 @app.route('/health')
