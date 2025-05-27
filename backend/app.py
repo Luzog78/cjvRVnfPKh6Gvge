@@ -1,10 +1,10 @@
 from flask import Flask, render_template, jsonify
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.', static_folder='.')
 
 @app.route('/')
 def index():
-    return render_template('index.html'), 200
+    return render_template('../index.html'), 200
 
 @app.route('/health')
 def health():
