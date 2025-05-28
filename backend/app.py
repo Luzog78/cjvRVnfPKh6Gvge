@@ -5,7 +5,8 @@ app = Flask(__name__, template_folder='.', static_folder='.')
 
 @app.route('/')
 def index():
-    print("Current working directory:", os.getcwd())
+    log_message = f"Current working directory: {os.getcwd()}"
+    app.logger.info(log_message)
     return render_template('../frontend/index.html'), 200
 
 @app.route('/health')
