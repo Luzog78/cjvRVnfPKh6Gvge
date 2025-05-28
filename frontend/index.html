@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Modern Experience</title>
+    <title>Welcome v1 | Modern Experience</title>
     <style>
         * {
             margin: 0;
@@ -261,29 +261,29 @@
                 padding: 40px 30px;
                 margin: 20px;
             }
-            
+
             .logo {
                 font-size: 2rem;
             }
-            
+
             .welcome-title {
                 font-size: 2rem;
             }
-            
+
             .welcome-subtitle {
                 font-size: 1rem;
             }
-            
+
             .button-group {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .btn {
                 width: 100%;
                 max-width: 250px;
             }
-            
+
             .features {
                 grid-template-columns: 1fr;
             }
@@ -322,7 +322,7 @@
             <div class="logo">NEXUS</div>
             <h1 class="welcome-title">Welcome to the Future</h1>
             <p class="welcome-subtitle">Experience the next generation of digital innovation with cutting-edge design and seamless interactions.</p>
-            
+
             <div class="button-group">
                 <button class="btn btn-primary" onclick="handleGetStarted()">Get Started</button>
                 <button class="btn btn-secondary" onclick="handleLearnMore()">Learn More</button>
@@ -379,7 +379,7 @@
                 fast: '⚡ Optimized for speed with instant loading and smooth animations',
                 secure: '🔒 Your data is protected with advanced security measures'
             };
-            
+
             const featureEl = event.currentTarget;
             featureEl.style.transform = 'scale(1.1)';
             setTimeout(() => {
@@ -393,7 +393,7 @@
             const particles = document.querySelectorAll('.particle');
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
-            
+
             particles.forEach((particle, index) => {
                 const speed = (index + 1) * 0.5;
                 const xPos = (x - 0.5) * speed * 20;
