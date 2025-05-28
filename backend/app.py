@@ -12,7 +12,7 @@ def health():
     return jsonify({"status": True}), 200
 
 @app.route('/cwd')
-def health():
+def cwd():
     return jsonify({"cwd": os.getcwd()}), 200
 
 @app.errorhandler(404)
